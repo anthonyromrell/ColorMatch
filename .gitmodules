@@ -1,0 +1,6 @@
+[submodule "insectabet/Assets/ArtisanDream"]
+	path = insectabet/Assets/ArtisanDream
+	url = https://github.com/anthonyromrell/Tools.git
+[submodule "insectabet/Assets/Exerimental"]
+	path = insectabet/Assets/Exerimental
+	url = https://github.com/anthonyromrell/Experimental.git
