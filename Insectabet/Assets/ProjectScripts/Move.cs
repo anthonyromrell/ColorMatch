@@ -1,21 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 //Made By Anthony Romrell
-public class Move : MonoBehaviour
+namespace ProjectScripts
 {
-	public CharacterController Character;
-	
-	public float Speed;
-	public Vector3 MoveSpeed;
-	public Vector3 RotateSpeed;
-	
-	private void Update()
+	public class Move : MonoBehaviour
 	{
-		MoveSpeed.x = Speed*Input.GetAxis("Horizontal");
-		MoveSpeed *= Time.deltaTime;
+		public CharacterController Character;
+	
+		public float Speed;
+		public Vector3 MoveSpeed;
+		public Vector3 RotateSpeed;
+	
+		private void Update()
+		{
+			MoveSpeed.x = Speed*Input.GetAxis("Horizontal");
+			MoveSpeed *= Time.deltaTime;
 
-		Character.Move(MoveSpeed);
+			Character.Move(MoveSpeed);
+		}
 	}
 }

@@ -1,14 +1,16 @@
 ﻿using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SaveScene")]
-public class SaveScene : ScriptableObject
+namespace ProjectScripts
 {
-
-	public void SaveSceneFunc ()
+	[CreateAssetMenu(fileName = "SaveScene")]
+	public class SaveScene : ScriptableObject
 	{
-		AssetDatabase.SaveAssets();
-		Debug.Log("Saved");
+
+		public void SaveSceneFunc ()
+		{
+			AssetDatabase.SaveAssets();
+			Debug.Log("Saved");
+		}
 	}
 }

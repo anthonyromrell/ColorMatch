@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-public class EventScript : MonoBehaviour
+namespace ProjectScripts
 {
-	public UnityEvent Event;
-
-	private void OnMouseDown()
+	public class EventScript : MonoBehaviour
 	{
-		Event.Invoke();
-	}
+		public UnityEvent Event;
 
-	private void OnTriggerEnter(Collider other)
-	{
-		Event.Invoke();
+		private void OnMouseDown()
+		{
+			Event.Invoke();
+		}
+
+		private void OnTriggerEnter(Collider other)
+		{
+			Event.Invoke();
+		}
 	}
 }

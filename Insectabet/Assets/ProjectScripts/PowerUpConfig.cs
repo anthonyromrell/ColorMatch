@@ -1,19 +1,22 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "PowerUpConfig")]
-public class PowerUpConfig : ScriptableObject
+namespace ProjectScripts
 {
-	public GameObject Prefab;
-	public Sprite SpriteImage;
-	public Color SpriteColor;
-
-	public void OnConfigure()
+	[CreateAssetMenu(fileName = "PowerUpConfig")]
+	public class PowerUpConfig : ScriptableObject
 	{
-		var newPrefab = Instantiate(Prefab);
-		newPrefab.name = this.name;
+		public GameObject Prefab;
+		public Sprite SpriteImage;
+		public Color SpriteColor;
+
+		public void OnConfigure()
+		{
+			var newPrefab = Instantiate(Prefab);
+			newPrefab.name = this.name;
 		
-		var newSprite = newPrefab.GetComponent<SpriteRenderer>();
-		newSprite.sprite = SpriteImage;
-		newSprite.color = SpriteColor;
+			var newSprite = newPrefab.GetComponent<SpriteRenderer>();
+			newSprite.sprite = SpriteImage;
+			newSprite.color = SpriteColor;
+		}
 	}
 }

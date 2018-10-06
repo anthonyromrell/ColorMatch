@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "PowerUpData")]
-public class PowerUpData : ScriptableObject 
+namespace ProjectScripts
 {
+	[CreateAssetMenu(fileName = "PowerUpData")]
+	public class PowerUpData : ScriptableObject 
+	{
 
 	
+	}
 }

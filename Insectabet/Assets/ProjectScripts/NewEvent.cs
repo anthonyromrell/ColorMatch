@@ -1,17 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using UnityEngine;
 
 //Made By Anthony Romrell
-public class NewEvent : MonoBehaviour
+namespace ProjectScripts
 {
-	//public UnityEvent Event;
-	public int EmitRate = 100;
-	public ParticleSystem Particles;
-	
-	private void OnMouseDown()
+	public class NewEvent : MonoBehaviour
 	{
-		Particles.Emit(EmitRate);
+		//public UnityEvent Event;
+		public int EmitRate = 100;
+		public ParticleSystem Particles;
+	
+		private void OnMouseDown()
+		{
+			Particles.Emit(EmitRate);
+		}
 	}
 }

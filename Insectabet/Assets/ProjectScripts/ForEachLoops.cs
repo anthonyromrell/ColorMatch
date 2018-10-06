@@ -1,27 +1,29 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using ArtisanDream.Tools.Objects;
 using UnityEngine;
 
 //Made By Anthony Romrell
-[CreateAssetMenu]
-public class ForEachLoops : ScriptableObject
+namespace ProjectScripts
 {
-	public FloatData RandomSpeed;
-	
-	public List<FloatData> SpeedOptions;
-
-	private void OnEnable()
+	[CreateAssetMenu]
+	public class ForEachLoops : ScriptableObject
 	{
-		var randomNum = Random.Range(0, SpeedOptions.Count - 1);
+		public FloatData RandomSpeed;
+	
+		public List<FloatData> SpeedOptions;
 
-		for (int i = 0; i < SpeedOptions.Count - 1; i++)
+		private void OnEnable()
 		{
-			if (i == randomNum)
+			var randomNum = Random.Range(0, SpeedOptions.Count - 1);
+
+			for (int i = 0; i < SpeedOptions.Count - 1; i++)
 			{
-				RandomSpeed = SpeedOptions[i];
+				if (i == randomNum)
+				{
+					RandomSpeed = SpeedOptions[i];
+				}
 			}
 		}
-	}
 
+	}
 }
