@@ -7,3 +7,6 @@
 [submodule "insectabet/Assets/ArtisanDream.Experimental"]
 	path = insectabet/Assets/ArtisanDream.Experimental
 	url = https://github.com/anthonyromrell/ArtisanDream.Experimental.git
+[submodule "insectabet/Assets/NavMeshComponents"]
+	path = insectabet/Assets/NavMeshComponents
+	url = https://github.com/anthonyromrell/NavMeshComponents.git
