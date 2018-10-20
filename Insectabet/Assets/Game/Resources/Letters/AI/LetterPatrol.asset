@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc79c88228e340ae94f9104e7ad7473, type: 3}
+  m_Name: LetterPatrol
+  m_EditorClassIdentifier: 
+  Speed: {fileID: 11400000, guid: 15de7f448f6c74249a92bf62405a9c27, type: 2}
+  AngularSpeed: {fileID: 11400000, guid: cc17f4abdcde148d1bdc0c75b5409229, type: 2}
+  NextPatrol:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  EndPatrol:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  AddPointsToList: {fileID: 11400000, guid: 9f7758e358d7c44e19452a79a841325d, type: 2}
+  AddPointList: {fileID: 11400000, guid: 9f7758e358d7c44e19452a79a841325d, type: 2}
+  distance: 0
+  HoldTime: 0.1
