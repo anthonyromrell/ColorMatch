@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f82618a67104859938f53e61dbf07b, type: 3}
   m_Name: LetterBrain
   m_EditorClassIdentifier: 
-  Base: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
+  Base: {fileID: 0}

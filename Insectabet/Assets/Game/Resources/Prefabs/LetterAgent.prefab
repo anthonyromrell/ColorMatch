@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10db14501d8f44560a2999e282b7530f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: {fileID: 11400000, guid: 7750ff6027945464d86e2b7302320696, type: 2}
+  Id: {fileID: 11400000, guid: b20da0afc63e8418b8c6e0193c7cb31b, type: 2}
   MatchMadeID: {fileID: 0}
   UseChangeOnMatch: 0
   OnMatch:
@@ -177,11 +177,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ec595f0024b440f9b6bf063af904c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Patrol: {fileID: 11400000, guid: 7e8389cde657f4082a8503db6e954d62, type: 2}
   Brain: {fileID: 11400000, guid: 9592de036adae4299b8d76475bcf1c11, type: 2}
   OnStart: {fileID: 11400000, guid: 7e8389cde657f4082a8503db6e954d62, type: 2}
   OnEnter: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
   OnExit: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
-  TransferCoroutine: {fileID: 11400000, guid: 4ef9ca341585f4e249406203e9fffdb1, type: 2}
+  TransferCoroutine: {fileID: 0}
 --- !u!114 &114429586912420156
 MonoBehaviour:
   m_ObjectHideFlags: 1

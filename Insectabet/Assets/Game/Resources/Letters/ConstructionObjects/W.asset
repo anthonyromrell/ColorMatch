@@ -14,3 +14,4 @@ MonoBehaviour:
   LetterSprite: {fileID: 21300044, guid: 4ca4fad17d51e459db610fd655b51093, type: 3}
   ID: {fileID: 11400000, guid: 35c425f3620044e00a803a62bf936ebc, type: 2}
   Patrol: {fileID: 11400000, guid: ce2d4349a10ab45c38545eadec5d0ddb, type: 2}
+  SendCoroutine: {fileID: 11400000, guid: 5fa4f399669c74e1db515ed267eb701b, type: 2}

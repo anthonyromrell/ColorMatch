@@ -9,8 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1cc75fd0c2d440dda80fd432ac47eca, type: 3}
-  m_Name: R
+  m_Name: X
   m_EditorClassIdentifier: 
-  LetterSprite: {fileID: 21300034, guid: 4ca4fad17d51e459db610fd655b51093, type: 3}
-  ID: {fileID: 11400000, guid: 09eb53f878b604e9d85f7adfaceb857a, type: 2}
-  Patrol: {fileID: 11400000, guid: 592ab592378bf409189cd65b03f93e05, type: 2}
+  LetterSprite: {fileID: 21300046, guid: 4ca4fad17d51e459db610fd655b51093, type: 3}
+  ID: {fileID: 11400000, guid: d16bd487d19cb4b199c88575b8502f0f, type: 2}
+  Patrol: {fileID: 11400000, guid: 790e62484701f496d9843fe4f4057145, type: 2}
+  SendCoroutine: {fileID: 11400000, guid: 242b22862bc804dfea4536ad14f03a3a, type: 2}

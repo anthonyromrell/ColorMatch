@@ -15,18 +15,7 @@ MonoBehaviour:
   AngularSpeed: {fileID: 11400000, guid: cc17f4abdcde148d1bdc0c75b5409229, type: 2}
   NextPatrol:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 4ef9ca341585f4e249406203e9fffdb1, type: 2}
-        m_MethodName: RaiseAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   EndPatrol:
@@ -34,6 +23,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  SendCoroutine: {fileID: 11400000, guid: 7b73e6584416e412fb3247a8e46ee3ea, type: 2}
   AddPointsToList: {fileID: 11400000, guid: 190b3d68800ac419cb0a51b39812d33e, type: 2}
   AddPointList: {fileID: 11400000, guid: 190b3d68800ac419cb0a51b39812d33e, type: 2}
   distance: {fileID: 11400000, guid: 5159358ce66f944fda4373cabd53af1e, type: 2}
