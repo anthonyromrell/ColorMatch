@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cf538a6bf9440f9b2b11242c2c1a2a, type: 3}
+  m_Name: RAPTOR
+  m_EditorClassIdentifier: 
+  LetterPrefab: {fileID: 1173877949150516, guid: 6b399c815c0864aa8b7fdfe6e1529edb,
+    type: 2}
+  RingObject: {fileID: 1229307395035172, guid: 645c9eb95a4e546d582f70eb647b9f8f, type: 2}
+  List: {fileID: 11400000, guid: 8fb3320498e984c4bb59eabacc1b1210, type: 2}
+  distance: 1.5

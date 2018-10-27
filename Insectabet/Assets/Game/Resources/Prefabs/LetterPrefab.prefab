@@ -106,6 +106,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  NoMatch:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnRestart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  HoldTime: {fileID: 0}
+  Matched: {fileID: 0}
 --- !u!114 &114075218611821004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: {fileID: 11400000, guid: b24f5fe1c697b41a69500e8cff6b4fa7, type: 2}
+  HoldTime: {fileID: 0}
 --- !u!114 &114439961471966528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +143,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanDrag: 0
+  OnDrag:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!212 &212653637855421002
 SpriteRenderer:
   m_ObjectHideFlags: 1

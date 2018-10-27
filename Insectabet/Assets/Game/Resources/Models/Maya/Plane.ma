@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
 //Name: Plane.ma
-//Last modified: Fri, Oct 19, 2018 01:50:56 PM
+//Last modified: Sat, Oct 20, 2018 09:56:59 PM
 //Codeset: UTF-8
 requires maya "2018ff09";
 requires "mtoa" "3.0.1.1";
@@ -13,8 +13,8 @@ fileInfo "osv" "Mac OS X 10.13.6";
 createNode transform -s -n "persp";
 	rename -uid "C6A8DFD6-1245-C6F5-A996-CC8AB68C8401";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 16.195088840270444 12.146316630202865 16.195088840270472 ;
-	setAttr ".r" -type "double3" -27.938352729602379 44.999999999999972 -5.172681101354183e-14 ;
+	setAttr ".t" -type "double3" 14.84752675231711 11.176570988731651 18.075674898678624 ;
+	setAttr ".r" -type "double3" -25.538352729602423 39.400000000000013 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3F304443-6E47-F4F6-94C7-8AB16FD7D9FE";
 	setAttr -k off ".v" no;

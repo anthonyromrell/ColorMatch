@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cc75fd0c2d440dda80fd432ac47eca, type: 3}
+  m_Name: D
+  m_EditorClassIdentifier: 
+  LetterSprite: {fileID: 21300006, guid: 4ca4fad17d51e459db610fd655b51093, type: 3}
+  ID: {fileID: 11400000, guid: e9136dc1ded2d4f9c8dc8b382f20dd01, type: 2}
+  Patrol: {fileID: 11400000, guid: a74d4ee3c4b6e476d849c75522df4abe, type: 2}
