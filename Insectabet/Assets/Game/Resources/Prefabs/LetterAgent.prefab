@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1173877949150516}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.8065243, y: 1.2288046, z: 0}
+  m_LocalPosition: {x: 0.8065243, y: -5.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4860419403038756}
@@ -148,6 +148,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 114429586912420156}
+        m_MethodName: set_Draggable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   NoMatch:
@@ -177,12 +188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ec595f0024b440f9b6bf063af904c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Patrol: {fileID: 11400000, guid: 7e8389cde657f4082a8503db6e954d62, type: 2}
-  Brain: {fileID: 11400000, guid: 9592de036adae4299b8d76475bcf1c11, type: 2}
   OnStart: {fileID: 11400000, guid: 7e8389cde657f4082a8503db6e954d62, type: 2}
   OnEnter: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
   OnExit: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
-  TransferCoroutine: {fileID: 0}
+  Brain: {fileID: 11400000, guid: 9592de036adae4299b8d76475bcf1c11, type: 2}
+  Patrol: {fileID: 11400000, guid: 7e8389cde657f4082a8503db6e954d62, type: 2}
 --- !u!114 &114429586912420156
 MonoBehaviour:
   m_ObjectHideFlags: 1
