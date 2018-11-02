@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 114537388383145278}
   - component: {fileID: 114011905591469002}
   - component: {fileID: 135493574869043468}
-  - component: {fileID: 114889684730809258}
   m_Layer: 13
   m_Name: RingAgent
   m_TagString: Untagged
@@ -41,7 +40,7 @@ GameObject:
   - component: {fileID: 4137320422215084}
   - component: {fileID: 212169499905074678}
   m_Layer: 13
-  m_Name: Ring
+  m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,45 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Destination: {fileID: 4570979895550620, guid: bf143887d86f647afa44dbf27757d522,
     type: 2}
---- !u!114 &114889684730809258
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1635858867203876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0759e17a5a17b42ccbf0e34c4b8c10b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 9a36177e3e8044f3490c1abcf57cf845, type: 2}
-        m_MethodName: ColorSelection
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: f81b2326af6f84330865583b26c3fc00,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: ColorData, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 9a36177e3e8044f3490c1abcf57cf845, type: 2}
-        m_MethodName: ChangeSprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 212169499905074678}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!135 &135493574869043468
 SphereCollider:
   m_ObjectHideFlags: 1
