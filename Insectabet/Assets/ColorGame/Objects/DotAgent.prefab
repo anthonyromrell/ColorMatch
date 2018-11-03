@@ -23,8 +23,10 @@ GameObject:
   - component: {fileID: 54466606942348528}
   - component: {fileID: 114545113216077184}
   - component: {fileID: 114314447199884652}
+  - component: {fileID: 114217905281414338}
   - component: {fileID: 114930796514097800}
   - component: {fileID: 195870618450992258}
+  - component: {fileID: 114432948613636490}
   m_Layer: 18
   m_Name: DotAgent
   m_TagString: Untagged
@@ -90,6 +92,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114217905281414338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506577935296886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60689c82db014950a2a2e30426d2617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: {fileID: 11400000, guid: 1f254d3ef2c4d459a86b1b28b2863647, type: 2}
 --- !u!114 &114314447199884652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,17 +119,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 195870618450992258}
-        m_MethodName: set_isStopped
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 195870618450992258}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -130,20 +133,25 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   OnUp:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 195870618450992258}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114432948613636490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506577935296886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ec595f0024b440f9b6bf063af904c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStart: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
+  OnEnter: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
+  OnExit: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
+  Brain: {fileID: 0}
+  Patrol: {fileID: 0}
 --- !u!114 &114545113216077184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -168,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10db14501d8f44560a2999e282b7530f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: {fileID: 0}
+  Id: {fileID: 0}
   MatchMadeID: {fileID: 11400000, guid: bc2a97532897c46438b4d201160fc1a1, type: 2}
   UseChangeOnMatch: 1
   OnMatch:
@@ -207,9 +215,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 195870618450992258}
-        m_MethodName: set_enabled
-        m_Mode: 6
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  NoMatch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114432948613636490}
+        m_MethodName: Restart
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -218,11 +231,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  NoMatch:
-    m_PersistentCalls:
-      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!135 &135848121225765732
