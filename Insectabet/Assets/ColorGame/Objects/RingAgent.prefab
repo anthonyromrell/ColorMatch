@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4476891915189260}
   - component: {fileID: 195445331266347760}
-  - component: {fileID: 114537388383145278}
   - component: {fileID: 114011905591469002}
   - component: {fileID: 135493574869043468}
+  - component: {fileID: 114354589986763178}
+  - component: {fileID: 114038709017640828}
   m_Layer: 13
   m_Name: RingAgent
   m_TagString: Untagged
@@ -66,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1635858867203876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.47, y: 4.26, z: 0}
+  m_LocalPosition: {x: 1.67, y: 5.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4137320422215084}
@@ -84,8 +85,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60689c82db014950a2a2e30426d2617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: {fileID: 11400000, guid: 1f254d3ef2c4d459a86b1b28b2863647, type: 2}
---- !u!114 &114537388383145278
+  ID: {fileID: 11400000, guid: 63df149c49f744e22b04addc3e6659f3, type: 2}
+--- !u!114 &114038709017640828
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,11 +94,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635858867203876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e79a2a4f30c0e493dac1ab8f5a88728d, type: 3}
+  m_Script: {fileID: 11500000, guid: 19ec595f0024b440f9b6bf063af904c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Destination: {fileID: 4570979895550620, guid: bf143887d86f647afa44dbf27757d522,
-    type: 2}
+  RestartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  EndRestartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnStart: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
+  OnEnter: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
+  OnExit: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
+  Brain: {fileID: 0}
+  Patrol: {fileID: 0}
+  HoldTime: {fileID: 11400000, guid: 3592028d3a8164568a18963ece512925, type: 2}
+--- !u!114 &114354589986763178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1635858867203876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314796b43cf1c4101a27b4a612993216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoldTime: 100
 --- !u!135 &135493574869043468
 SphereCollider:
   m_ObjectHideFlags: 1

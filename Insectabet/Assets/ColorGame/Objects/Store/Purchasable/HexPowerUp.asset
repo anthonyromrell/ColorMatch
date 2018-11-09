@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e7e693d9a6c4362af456da1c2d6bf6, type: 3}
   m_Name: HexPowerUp
   m_EditorClassIdentifier: 
-  Item: {fileID: 0}
-  Value: 0
+  Item: {fileID: 1574132906360106, guid: 402aa5d700e2f4ebb8bf3536e94f0464, type: 2}
+  Value: 1
   Perpetual: 0
-  Instanciatable: 0
+  Instanciatable: 1

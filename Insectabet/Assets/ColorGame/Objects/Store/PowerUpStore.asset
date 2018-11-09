@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b4e3058ea824b80be06b2b20c36156, type: 3}
   m_Name: PowerUpStore
   m_EditorClassIdentifier: 
-  Available: {fileID: 0}
-  Purchased: {fileID: 0}
+  Available: {fileID: 11400000, guid: 458e3d316c6c442b98af8c3a94adfb67, type: 2}
+  Purchased: {fileID: 11400000, guid: 3bf0fa6cf3452431d83fce74928ecfb4, type: 2}
   Cash: {fileID: 11400000, guid: 83168ed2770d54ff5be22ef7766bb4bc, type: 2}
   TotalValue: 0
   MadePurchase:
