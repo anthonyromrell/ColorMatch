@@ -18,8 +18,8 @@ public class ColorController : ScriptableObject
 	
 	public void Create()
 	{
-		Build(RingPrefab, "ObjectID");
-		Build(DotPrefab, "MatchID");
+		Build(RingPrefab);
+		Build(DotPrefab);
 		
 		if (i < ObjColor.Count-1)
 		{
@@ -31,18 +31,10 @@ public class ColorController : ScriptableObject
 		}
 	}
 
-	public void Build(GameObject go, string obj)
+	public void Build(GameObject go)
 	{
 		var newGo = Instantiate(go);
-		
-		if (obj == "ObjectID")
-		{
-			newGo.GetComponent<ObjectID>().ID = ID[i];
-		}
-		else
-		{
-			newGo.GetComponent<MatchID>().ID = ID[i];
-		}
+		newGo.GetComponent<MatchID>().ID = ID[i];
 		newGo.GetComponentInChildren<SpriteRenderer>().color = ObjColor[i].Value;
 	}
 }

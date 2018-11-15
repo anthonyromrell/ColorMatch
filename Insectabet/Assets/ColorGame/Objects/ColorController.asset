@@ -21,5 +21,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e3a58439ced0d4ffe9298c43dc047209, type: 2}
   - {fileID: 11400000, guid: 6fa734888f68e47c9ab3d73b27311609, type: 2}
   - {fileID: 11400000, guid: ab1c6f223c6aa40a4b409178684cee05, type: 2}
-  RingPrefab: {fileID: 1635858867203876, guid: 649010e52f4b44853bae635238eea4c0, type: 2}
+  RingPrefab: {fileID: 1978265258660788, guid: c7a90e2dd53124241b41abcfb6f935f1, type: 2}
   DotPrefab: {fileID: 1506577935296886, guid: 18b53eba914394be7b7bd0f32fa2525c, type: 2}

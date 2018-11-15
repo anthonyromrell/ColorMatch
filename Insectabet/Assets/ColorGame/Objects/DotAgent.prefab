@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114930796514097800}
   - component: {fileID: 195870618450992258}
   - component: {fileID: 114432948613636490}
-  - component: {fileID: 114947324105472094}
+  - component: {fileID: 114554802171879880}
   m_Layer: 18
   m_Name: DotAgent
   m_TagString: Untagged
@@ -175,6 +175,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: {fileID: 11400000, guid: 4d7a8b7ca8e5446b791db0b1887bbfd1, type: 2}
   HoldTime: {fileID: 11400000, guid: 3592028d3a8164568a18963ece512925, type: 2}
+--- !u!114 &114554802171879880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506577935296886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e640c4ecbf94a6f8075de14aa5acea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Action: {fileID: 11400000, guid: 0f4609052a0a54894a6c7cd36d58b49a, type: 2}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1506577935296886}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114930796514097800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,9 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10db14501d8f44560a2999e282b7530f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: {fileID: 11400000, guid: 1f254d3ef2c4d459a86b1b28b2863647, type: 2}
-  MatchMadeID: {fileID: 11400000, guid: bc2a97532897c46438b4d201160fc1a1, type: 2}
-  UseChangeOnMatch: 1
+  ID: {fileID: 11400000, guid: 63df149c49f744e22b04addc3e6659f3, type: 2}
   OnMatch:
     m_PersistentCalls:
       m_Calls:
@@ -263,9 +289,9 @@ MonoBehaviour:
   NoMatch:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114947324105472094}
-        m_MethodName: DestroyObj
-        m_Mode: 1
+      - m_Target: {fileID: 1506577935296886}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -276,18 +302,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114947324105472094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1506577935296886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 314796b43cf1c4101a27b4a612993216, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HoldTime: 100
 --- !u!135 &135848121225765732
 SphereCollider:
   m_ObjectHideFlags: 1
