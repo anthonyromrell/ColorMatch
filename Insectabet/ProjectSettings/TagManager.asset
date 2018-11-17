@@ -15,17 +15,17 @@ TagManager:
   - 
   - Ground
   - 
+  - DotMatched
   - 
   - 
-  - 
-  - Match
+  - RingMatched
   - 
   - 
   - Ring
   - 
   - Dot
   - 
-  - 
+  - End
   - 
   - Bullet
   - 

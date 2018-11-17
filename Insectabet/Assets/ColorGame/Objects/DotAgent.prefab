@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4144855198601408}
   - component: {fileID: 198930373061221862}
   - component: {fileID: 199767338010297236}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Curves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4072521829212918}
   - component: {fileID: 198766947052582702}
   - component: {fileID: 199321124563111270}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: BrightBits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1178175569875570
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
@@ -55,8 +55,23 @@ GameObject:
   - component: {fileID: 4827600362311710}
   - component: {fileID: 198562947558224078}
   - component: {fileID: 199539828889986072}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: OrbExplodeGreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1204615507710774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4124519300072552}
+  m_Layer: 18
+  m_Name: OffFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +87,7 @@ GameObject:
   - component: {fileID: 4426581706808730}
   - component: {fileID: 198347245990891724}
   - component: {fileID: 199593776651102106}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: CenterOrb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +96,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1260301265082030
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
@@ -92,13 +107,13 @@ GameObject:
   - component: {fileID: 108729808818438076}
   - component: {fileID: 82009864983458768}
   - component: {fileID: 114162917935017486}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: BlackHoleExplosionGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1394883256726120
 GameObject:
   m_ObjectHideFlags: 1
@@ -109,7 +124,7 @@ GameObject:
   - component: {fileID: 4571560771412222}
   - component: {fileID: 198644762247052146}
   - component: {fileID: 199428116683952268}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Distortion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +141,7 @@ GameObject:
   - component: {fileID: 4698294853438520}
   - component: {fileID: 198829449168568056}
   - component: {fileID: 199413944203250668}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: GlowStripes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +158,7 @@ GameObject:
   - component: {fileID: 4261243283832536}
   - component: {fileID: 198652968692237670}
   - component: {fileID: 199352968921378326}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Darkbits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,6 +189,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1582908977096360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4320562343180108}
+  m_Layer: 18
+  m_Name: MatchFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1651502459369538
 GameObject:
   m_ObjectHideFlags: 1
@@ -184,7 +214,7 @@ GameObject:
   - component: {fileID: 4116499331870956}
   - component: {fileID: 198063554501636616}
   - component: {fileID: 199096470416546852}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Noise
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +231,7 @@ GameObject:
   - component: {fileID: 4779890160990964}
   - component: {fileID: 198301455863683762}
   - component: {fileID: 199676404018342190}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: DarkGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +248,7 @@ GameObject:
   - component: {fileID: 4194102961184950}
   - component: {fileID: 198586434284186572}
   - component: {fileID: 199199238661543786}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: BrightGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +265,7 @@ GameObject:
   - component: {fileID: 4678889989173618}
   - component: {fileID: 198663760903595166}
   - component: {fileID: 199321628569065386}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +298,7 @@ GameObject:
   - component: {fileID: 4829114838659178}
   - component: {fileID: 198866955169837344}
   - component: {fileID: 199727640056218740}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Bokeh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,6 +329,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4827600362311710}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4124519300072552
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204615507710774}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4822177424827292}
+  m_Father: {fileID: 4656195503449302}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4144855198601408
@@ -353,6 +397,20 @@ Transform:
   m_Father: {fileID: 4822177424827292}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4320562343180108
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1582908977096360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4827600362311710}
+  m_Father: {fileID: 4656195503449302}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4426581706808730
 Transform:
   m_ObjectHideFlags: 1
@@ -390,8 +448,8 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 4160957954599354}
-  - {fileID: 4827600362311710}
-  - {fileID: 4822177424827292}
+  - {fileID: 4320562343180108}
+  - {fileID: 4124519300072552}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -441,7 +499,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1260301265082030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.05, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0500003, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4779890160990964}
@@ -451,8 +509,8 @@ Transform:
   - {fileID: 4072521829212918}
   - {fileID: 4261243283832536}
   - {fileID: 4571560771412222}
-  m_Father: {fileID: 4656195503449302}
-  m_RootOrder: 2
+  m_Father: {fileID: 4124519300072552}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4827600362311710
 Transform:
@@ -461,15 +519,15 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1178175569875570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.03, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0300004, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 4698294853438520}
   - {fileID: 4829114838659178}
   - {fileID: 4116499331870956}
   - {fileID: 4678889989173618}
-  m_Father: {fileID: 4656195503449302}
-  m_RootOrder: 1
+  m_Father: {fileID: 4320562343180108}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4829114838659178
 Transform:
@@ -756,7 +814,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1260301265082030}
+      - m_Target: {fileID: 1204615507710774}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -861,7 +919,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1178175569875570}
+      - m_Target: {fileID: 1582908977096360}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -872,13 +930,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 114930796514097800}
-        m_MethodName: set_MatchMade
-        m_Mode: 6
+      - m_Target: {fileID: 1506577935296886}
+        m_MethodName: set_layer
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
