@@ -8,11 +8,11 @@ public class ColorGenerator : ScriptableObject, ICreate
 	public List<NameID> Id;
 	public List<ColorData> ObjColor;
 	public GameObject RingPrefab, DotPrefab;
-	public int i { get; set; }
+	public int I { get; set; }
 
 	public void OnEnable()
 	{
-		i = 0;
+		I = 0;
 	}
 
 	public void Create()
@@ -20,27 +20,27 @@ public class ColorGenerator : ScriptableObject, ICreate
 		Build(RingPrefab);
 		Build(DotPrefab);
 		
-		if (i < ObjColor.Count-1)
+		if (I < ObjColor.Count-1)
 		{
-			i++;
+			I++;
 		}
 		else
 		{
-			i = 0;
+			I = 0;
 		}
 	}
 
 	public void Build(GameObject go)
 	{
 		var newGo = Instantiate(go);
-		newGo.GetComponent<MatchID>().ID = Id[i];
-		newGo.GetComponentInChildren<SpriteRenderer>().color = ObjColor[i].Value;
+		newGo.GetComponent<MatchID>().ID = Id[I];
+		newGo.GetComponentInChildren<SpriteRenderer>().color = ObjColor[I].Value;
 	}
 }
 
 public interface ICreate
 {
-	int i { get; set; }
+	int I { get; set; }
 	void OnEnable();
 	void Create();
 	void Build(GameObject go);
