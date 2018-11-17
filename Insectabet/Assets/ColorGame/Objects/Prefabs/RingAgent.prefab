@@ -98,22 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ec595f0024b440f9b6bf063af904c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RestartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  EndRestartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   OnStart: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
   OnEnter: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
   OnExit: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
   Brain: {fileID: 0}
   Patrol: {fileID: 0}
-  HoldTime: {fileID: 11400000, guid: 3592028d3a8164568a18963ece512925, type: 2}
 --- !u!114 &114354589986763178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,7 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314796b43cf1c4101a27b4a612993216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HoldTime: 100
+  Seconds: 2
+  UseTrigger: 1
 --- !u!114 &114504417124856930
 MonoBehaviour:
   m_ObjectHideFlags: 1

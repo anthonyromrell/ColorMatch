@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class ColorController : ScriptableObject
+[CreateAssetMenu(menuName = "Color/Generator")]
+public class ColorGenerator : ScriptableObject, ICreate
 {
-	public List<NameID> ID;
+	public List<NameID> Id;
 	public List<ColorData> ObjColor;
-	public GameObject RingPrefab;
-	public GameObject DotPrefab;
-	private int i = 0;
+	public GameObject RingPrefab, DotPrefab;
+	public int i { get; set; }
 
-	private void OnEnable()
+	public void OnEnable()
 	{
 		i = 0;
 	}
-	
+
 	public void Create()
 	{
 		Build(RingPrefab);
@@ -34,7 +33,15 @@ public class ColorController : ScriptableObject
 	public void Build(GameObject go)
 	{
 		var newGo = Instantiate(go);
-		newGo.GetComponent<MatchID>().ID = ID[i];
+		newGo.GetComponent<MatchID>().ID = Id[i];
 		newGo.GetComponentInChildren<SpriteRenderer>().color = ObjColor[i].Value;
 	}
+}
+
+public interface ICreate
+{
+	int i { get; set; }
+	void OnEnable();
+	void Create();
+	void Build(GameObject go);
 }

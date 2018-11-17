@@ -69,9 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10db14501d8f44560a2999e282b7530f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: {fileID: 11400000, guid: bc2a97532897c46438b4d201160fc1a1, type: 2}
-  MatchMadeID: {fileID: 11400000, guid: bc2a97532897c46438b4d201160fc1a1, type: 2}
-  UseChangeOnMatch: 0
+  ID: {fileID: 0}
   OnMatch:
     m_PersistentCalls:
       m_Calls:

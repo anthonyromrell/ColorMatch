@@ -11,11 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1341874ea2b4040d48e7de4872840b1e, type: 3}
   m_Name: ColorController
   m_EditorClassIdentifier: 
-  ID:
+  Id:
   - {fileID: 11400000, guid: 63df149c49f744e22b04addc3e6659f3, type: 2}
-  - {fileID: 11400000, guid: b71dba8aacb4b474ebf5167de5f472b9, type: 2}
-  - {fileID: 11400000, guid: 1f254d3ef2c4d459a86b1b28b2863647, type: 2}
   - {fileID: 11400000, guid: cc1d922742da74f4fb56f742169ca39e, type: 2}
+  - {fileID: 11400000, guid: 1f254d3ef2c4d459a86b1b28b2863647, type: 2}
+  - {fileID: 11400000, guid: b71dba8aacb4b474ebf5167de5f472b9, type: 2}
   ObjColor:
   - {fileID: 11400000, guid: 69ec7a3175a004948b1d65c2597bf762, type: 2}
   - {fileID: 11400000, guid: e3a58439ced0d4ffe9298c43dc047209, type: 2}
