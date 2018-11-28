@@ -13,8 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Available: {fileID: 11400000, guid: 458e3d316c6c442b98af8c3a94adfb67, type: 2}
   Purchased: {fileID: 11400000, guid: 3bf0fa6cf3452431d83fce74928ecfb4, type: 2}
+  Canvas: {fileID: 1303440342185768, guid: dbecd82eff30049e38c208a7201dc0be, type: 2}
+  Button: {fileID: 1450157008460560, guid: 87212011c95184925931866e571009ca, type: 2}
   Cash: {fileID: 11400000, guid: 83168ed2770d54ff5be22ef7766bb4bc, type: 2}
-  TotalValue: 0
+  TotalValue: 25
   MadePurchase:
     m_PersistentCalls:
       m_Calls: []

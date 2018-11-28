@@ -8,17 +8,31 @@ public class ColorGenerator : ScriptableObject, ICreate
 	public List<NameID> Id;
 	public List<ColorData> ObjColor;
 	public GameObject RingPrefab, DotPrefab;
+	public GameAction GetDotPoints, GetRingPoints;
+	private List<Vector3Data> dotStartPoints, ringStartPoints;
 	public int I { get; set; }
 
 	public void OnEnable()
 	{
 		I = 0;
+		GetDotPoints.Raise = RaiseDotHandler;
+		GetRingPoints.Raise = RaiseRingHandler;
+	}
+
+	private void RaiseDotHandler(object dotList)
+	{
+		dotStartPoints = dotList as List<Vector3Data>;
+	}
+	
+	private void RaiseRingHandler(object dotList)
+	{
+		ringStartPoints = dotList as List<Vector3Data>;
 	}
 
 	public void Create()
 	{
-		Build(RingPrefab);
-		Build(DotPrefab);
+		Build(RingPrefab, ringStartPoints, ringStartPoints.Count);
+		Build(DotPrefab, dotStartPoints, dotStartPoints.Count);
 		
 		if (I < ObjColor.Count-1)
 		{
@@ -30,11 +44,23 @@ public class ColorGenerator : ScriptableObject, ICreate
 		}
 	}
 
-	public void Build(GameObject go)
+	public void Build(GameObject obj, Vector3 location)
 	{
-		var newGo = Instantiate(go);
+		var newGo = Instantiate(obj, location, Quaternion.identity);
 		newGo.GetComponent<MatchID>().ID = Id[I];
 		newGo.GetComponentInChildren<SpriteRenderer>().color = ObjColor[I].Value;
+	}
+	
+	public void Build(GameObject obj, List<Vector3Data> points, int count)
+	{
+		var num = Mathf.RoundToInt(Random.Range(0, count));
+		if (points[num] != null)
+		{
+			var location = points[num].Value;
+			var newGo = Instantiate(obj, location, Quaternion.identity);
+			newGo.GetComponent<MatchID>().ID = Id[I];
+			newGo.GetComponentInChildren<SpriteRenderer>().color = ObjColor[I].Value;
+		}
 	}
 }
 
@@ -43,5 +69,5 @@ public interface ICreate
 	int I { get; set; }
 	void OnEnable();
 	void Create();
-	void Build(GameObject go);
+	void Build(GameObject go, Vector3 location);
 }

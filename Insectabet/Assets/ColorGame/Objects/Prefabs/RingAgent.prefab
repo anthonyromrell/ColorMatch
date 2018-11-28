@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114354589986763178}
   - component: {fileID: 114038709017640828}
   - component: {fileID: 114504417124856930}
+  - component: {fileID: 95461137574526214}
   m_Layer: 13
   m_Name: RingAgent
   m_TagString: Untagged
@@ -75,6 +76,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95461137574526214
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1635858867203876}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e1aeb72c0f074077899eac8d1db6e24, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114011905591469002
 MonoBehaviour:
   m_ObjectHideFlags: 1

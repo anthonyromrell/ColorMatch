@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efffa1b3b035e499aa80f0044fa75132, type: 3}
   m_Name: HuntDot
   m_EditorClassIdentifier: 
-  Speed: {fileID: 11400000, guid: 5856e4262acb24fa9bf3f184d8e230ea, type: 2}
+  Speed: {fileID: 11400000, guid: a871790d6643342ae9a85fbc04c16d87, type: 2}
   AngularSpeed: {fileID: 11400000, guid: 5159358ce66f944fda4373cabd53af1e, type: 2}
   GameAction: {fileID: 11400000, guid: 14947d0beb3dd4a2da03510d94139c69, type: 2}
