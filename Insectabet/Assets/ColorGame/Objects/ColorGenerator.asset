@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -21,7 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e3a58439ced0d4ffe9298c43dc047209, type: 2}
   - {fileID: 11400000, guid: 6fa734888f68e47c9ab3d73b27311609, type: 2}
   - {fileID: 11400000, guid: ab1c6f223c6aa40a4b409178684cee05, type: 2}
-  RingPrefab: {fileID: 1978265258660788, guid: c7a90e2dd53124241b41abcfb6f935f1, type: 2}
-  DotPrefab: {fileID: 1506577935296886, guid: 18b53eba914394be7b7bd0f32fa2525c, type: 2}
-  GetDotPoints: {fileID: 11400000, guid: 853f34c3f95dc4281a8bceb1a8a15bd4, type: 2}
+  RingPrefab: {fileID: 1978265258660788, guid: c7a90e2dd53124241b41abcfb6f935f1, type: 3}
+  DotPrefab: {fileID: 1506577935296886, guid: 18b53eba914394be7b7bd0f32fa2525c, type: 3}
+  GetDotPoints: {fileID: 11400000, guid: 9bc5b1a68579e4b7aa6b1ee2a0d390ba, type: 2}
   GetRingPoints: {fileID: 11400000, guid: 7c01f13e7bb2d40c9b6f4ed560700252, type: 2}

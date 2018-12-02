@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OtherThing
   m_EditorClassIdentifier: 
   Item: {fileID: 1574132906360106, guid: 402aa5d700e2f4ebb8bf3536e94f0464, type: 3}
-  PreviewArt: {fileID: 21300000, guid: bbe1c1204b03f47f88c3963f67cf8605, type: 3}
+  PreviewArt: {fileID: 21300028, guid: bbe1c1204b03f47f88c3963f67cf8605, type: 3}
   UsageCount: 10
   Value: 100
   Upgrade: 0
