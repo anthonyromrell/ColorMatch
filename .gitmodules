@@ -10,3 +10,6 @@
 [submodule "ColorMatch/Assets/NavMeshComponents"]
 	path = ColorMatch/Assets/NavMeshComponents
 	url = https://github.com/anthonyromrell/NavMeshComponents.git
+[submodule "ColorMatch/Assets/DangFunCode"]
+	path = ColorMatch/Assets/DangFunCode
+	url = https://github.com/anthonyromrell/DangFunCode.git
