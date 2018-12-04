@@ -1,12 +1,12 @@
-[submodule "insectabet/Assets/ArtisanDream.Legacy"]
-	path = insectabet/Assets/ArtisanDream.Legacy
-	url = https://github.com/anthonyromrell/ArtisanDream.Legacy.git
-[submodule "insectabet/Assets/ArtisanDream.Tools"]
-	path = insectabet/Assets/ArtisanDream.Tools
-	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
-[submodule "insectabet/Assets/ArtisanDream.Experimental"]
-	path = insectabet/Assets/ArtisanDream.Experimental
+[submodule "ColorMatch/Assets/ArtisanDream.Experimental"]
+	path = ColorMatch/Assets/ArtisanDream.Experimental
 	url = https://github.com/anthonyromrell/ArtisanDream.Experimental.git
-[submodule "insectabet/Assets/NavMeshComponents"]
-	path = insectabet/Assets/NavMeshComponents
+[submodule "ColorMatch/Assets/ArtisanDream.Legacy"]
+	path = ColorMatch/Assets/ArtisanDream.Legacy
+	url = https://github.com/anthonyromrell/ArtisanDream.Legacy.git
+[submodule "ColorMatch/Assets/ArtisanDream.Tools"]
+	path = ColorMatch/Assets/ArtisanDream.Tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
+[submodule "ColorMatch/Assets/NavMeshComponents"]
+	path = ColorMatch/Assets/NavMeshComponents
 	url = https://github.com/anthonyromrell/NavMeshComponents.git
