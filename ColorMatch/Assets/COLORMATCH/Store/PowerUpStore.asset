@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -13,12 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Available: {fileID: 11400000, guid: 458e3d316c6c442b98af8c3a94adfb67, type: 2}
   Purchased: {fileID: 11400000, guid: 3bf0fa6cf3452431d83fce74928ecfb4, type: 2}
-  Canvas: {fileID: 1303440342185768, guid: dbecd82eff30049e38c208a7201dc0be, type: 2}
-  Button: {fileID: 1450157008460560, guid: 87212011c95184925931866e571009ca, type: 2}
+  Canvas: {fileID: 1303440342185768, guid: dbecd82eff30049e38c208a7201dc0be, type: 3}
+  Button: {fileID: 1450157008460560, guid: 87212011c95184925931866e571009ca, type: 3}
   Cash: {fileID: 11400000, guid: 83168ed2770d54ff5be22ef7766bb4bc, type: 2}
-  TotalValue: 25
+  TotalValue: 50
+  EnableStore:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   MadePurchase:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  HoldTime: 0.25
+  SendThis: {fileID: 11400000, guid: 0de20c99a96c74130b441fddaa430ee4, type: 2}
+  RunBuildButtonsCoroutine: {fileID: 11400000, guid: ee8597602926949f5a7ffbca2e5d530c,
+    type: 2}

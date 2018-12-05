@@ -121,6 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 50032304}
+  - component: {fileID: 50032305}
   - component: {fileID: 50032303}
   m_Layer: 0
   m_Name: Store
@@ -143,18 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 7f0750c5e05f746158771f4e1e7bc526, type: 2}
-        m_MethodName: BuildUI
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!4 &50032304
@@ -171,6 +161,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50032305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50032302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7dbfe5562a6445ecb7a369275eff0f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GetCoroutineObject: {fileID: 11400000, guid: 0de20c99a96c74130b441fddaa430ee4, type: 2}
+  CoroutineActionRun: {fileID: 11400000, guid: ee8597602926949f5a7ffbca2e5d530c, type: 2}
 --- !u!1 &221522787
 GameObject:
   m_ObjectHideFlags: 0
