@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2150473010616297503}
   - component: {fileID: 7863917323304322991}
   m_Layer: 5
-  m_Name: BarrierButton
+  m_Name: ColorChangeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,7 +40,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6243258144915420158
 CanvasRenderer:
@@ -119,8 +119,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2323618537187024734}
-        m_MethodName: Call
+      - m_Target: {fileID: 11400000, guid: 0d8e40c53f5c84790897f9ffd539e279, type: 2}
+        m_MethodName: RaiseAction
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e340194f47c8445dd8ff49a9a485714c,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 1b948927aa03e468b835f2478826816e, type: 2}
+        m_MethodName: Used
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -130,20 +142,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 0ba3846b877ea48458f87775bd4f84d6, type: 2}
-        m_MethodName: OnCall
-        m_Mode: 2
+      - m_Target: {fileID: 11400000, guid: 1b948927aa03e468b835f2478826816e, type: 2}
+        m_MethodName: CreateOnceAndParent
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 2674620938109283225, guid: 38483552a31c743398c0fc282bbbaeb8,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 8ff56f11998a74ba8a51ec8be00d66dc, type: 2}
-        m_MethodName: CreateOnceAndParent
+      - m_Target: {fileID: 2323618537187024734}
+        m_MethodName: Call
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -172,7 +183,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  EndEvent:
+  BeginDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  EndDestroyEvent:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -298,4 +314,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Barrier
+  m_Text: COLOR

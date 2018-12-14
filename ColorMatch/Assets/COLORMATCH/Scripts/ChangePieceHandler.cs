@@ -12,7 +12,11 @@ public class ChangePieceHandler : MonoBehaviour
     private void RaiseHandler (object obj)
     {
         var newPiece = obj as GamePiece;
-        GetComponent<SpriteRenderer>().color = newPiece.ObjColor.Value;
-        
+        GetComponentInChildren<SpriteRenderer>().color = newPiece.ObjColor.Value;
+    }
+
+    private void OnDestroy()
+    {
+        ChangeAction.Raise -= RaiseHandler ;
     }
 }

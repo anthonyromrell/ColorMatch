@@ -37247,6 +37247,7 @@ GameObject:
   - component: {fileID: 114554802171879880}
   - component: {fileID: 114124237144903810}
   - component: {fileID: 95444284067396204}
+  - component: {fileID: 8315095599588302753}
   m_Layer: 18
   m_Name: DotAgent
   m_TagString: Untagged
@@ -37631,6 +37632,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8315095599588302753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506577935296886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3551d7f1d0d50463190cfe22ab5ed73b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangeAction: {fileID: 11400000, guid: 0d8e40c53f5c84790897f9ffd539e279, type: 2}
 --- !u!1 &1582908977096360
 GameObject:
   m_ObjectHideFlags: 0
