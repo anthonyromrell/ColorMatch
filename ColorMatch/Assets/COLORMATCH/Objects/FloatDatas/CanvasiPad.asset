@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68c482cf336c04c9f9f0458f2a470117, type: 3}
-  m_Name: GameSpeed
+  m_Name: CanvasiPad
   m_EditorClassIdentifier: 
-  value: 2.8000004
-  CanReset: 1
+  value: 2.5
+  CanReset: 0
