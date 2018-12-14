@@ -94,10 +94,11 @@ GameObject:
   - component: {fileID: 195795875159298030}
   - component: {fileID: 114916320495796574}
   - component: {fileID: 114007463542701018}
+  - component: {fileID: 7488994642781742960}
   - component: {fileID: 114470316709479656}
   - component: {fileID: 95350675191874380}
   m_Layer: 16
-  m_Name: RingAgentRight
+  m_Name: RingAgent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,7 +239,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 0.1
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -286,6 +287,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &7488994642781742960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978265258660788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e640c4ecbf94a6f8075de14aa5acea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Action: {fileID: 11400000, guid: 0d8e40c53f5c84790897f9ffd539e279, type: 2}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114470316709479656

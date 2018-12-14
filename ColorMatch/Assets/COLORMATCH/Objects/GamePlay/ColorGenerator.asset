@@ -12,16 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1341874ea2b4040d48e7de4872840b1e, type: 3}
   m_Name: ColorGenerator
   m_EditorClassIdentifier: 
-  Id:
-  - {fileID: 11400000, guid: 63df149c49f744e22b04addc3e6659f3, type: 2}
-  - {fileID: 11400000, guid: cc1d922742da74f4fb56f742169ca39e, type: 2}
-  - {fileID: 11400000, guid: 1f254d3ef2c4d459a86b1b28b2863647, type: 2}
-  - {fileID: 11400000, guid: b71dba8aacb4b474ebf5167de5f472b9, type: 2}
-  ObjColor:
-  - {fileID: 11400000, guid: 69ec7a3175a004948b1d65c2597bf762, type: 2}
-  - {fileID: 11400000, guid: e3a58439ced0d4ffe9298c43dc047209, type: 2}
-  - {fileID: 11400000, guid: 6fa734888f68e47c9ab3d73b27311609, type: 2}
-  - {fileID: 11400000, guid: ab1c6f223c6aa40a4b409178684cee05, type: 2}
+  GamePieces:
+  - {fileID: 11400000, guid: 73a59f9bffc4942e4b26f04349ab8c96, type: 2}
+  - {fileID: 11400000, guid: 759ac6a4685334346a21f124d069ff9d, type: 2}
+  - {fileID: 11400000, guid: facac8f4c5bb04641b47323a4cafeb1f, type: 2}
+  - {fileID: 11400000, guid: 936001b41947946609e27b9a5bb6328a, type: 2}
   RingPrefab: {fileID: 1978265258660788, guid: c7a90e2dd53124241b41abcfb6f935f1, type: 3}
   DotPrefab: {fileID: 1506577935296886, guid: 18b53eba914394be7b7bd0f32fa2525c, type: 3}
   GetDotPoints: {fileID: 11400000, guid: 9bc5b1a68579e4b7aa6b1ee2a0d390ba, type: 2}

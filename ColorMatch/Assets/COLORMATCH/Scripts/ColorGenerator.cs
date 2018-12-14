@@ -5,8 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Color/Generator")]
 public class ColorGenerator : ScriptableObject, ICreate
 {
-	public List<NameID> Id;
-	public List<ColorData> ObjColor;
+	public List<GamePiece> GamePieces;
 	public GameObject RingPrefab, DotPrefab;
 	public GameAction GetDotPoints, GetRingPoints;
 	private List<Vector3Data> dotStartPoints, ringStartPoints;
@@ -34,7 +33,7 @@ public class ColorGenerator : ScriptableObject, ICreate
 		Build(RingPrefab, ringStartPoints, ringStartPoints.Count);
 		Build(DotPrefab, dotStartPoints, dotStartPoints.Count);
 		
-		if (I < ObjColor.Count-1)
+		if (I < GamePieces.Count-1)
 		{
 			I++;
 		}
@@ -47,20 +46,18 @@ public class ColorGenerator : ScriptableObject, ICreate
 	public void Build(GameObject obj, Vector3 location)
 	{
 		var newGo = Instantiate(obj, location, Quaternion.identity);
-		newGo.GetComponent<MatchID>().ID = Id[I];
-		newGo.GetComponentInChildren<SpriteRenderer>().color = ObjColor[I].Value;
+		newGo.GetComponent<MatchID>().ID = GamePieces[I].Id;
+		newGo.GetComponentInChildren<SpriteRenderer>().color = GamePieces[I].ObjColor.Value;
 	}
 	
 	public void Build(GameObject obj, List<Vector3Data> points, int count)
 	{
 		var num = Mathf.RoundToInt(Random.Range(0, count));
-		if (points[num] != null)
-		{
-			var location = points[num].Value;
-			var newGo = Instantiate(obj, location, Quaternion.identity);
-			newGo.GetComponent<MatchID>().ID = Id[I];
-			newGo.GetComponentInChildren<SpriteRenderer>().color = ObjColor[I].Value;
-		}
+		if (points[num] == null) return;
+		var location = points[num].Value;
+		var newGo = Instantiate(obj, location, Quaternion.identity);
+		newGo.GetComponent<MatchID>().ID = GamePieces[I].Id;
+		newGo.GetComponentInChildren<SpriteRenderer>().color = GamePieces[I].ObjColor.Value;
 	}
 }
 
