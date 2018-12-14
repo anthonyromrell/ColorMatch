@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c482cf336c04c9f9f0458f2a470117, type: 3}
   m_Name: GameSpeed
   m_EditorClassIdentifier: 
-  value: 2.8000004
+  value: 1
   CanReset: 1
