@@ -37538,8 +37538,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnStart: {fileID: 11400000, guid: 8c3c57efd56fa4d05960259ba698af0b, type: 2}
-  OnEnter: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
-  OnExit: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
+  OnEnter: {fileID: 11400000, guid: 0347b4f2da9aa46f19575b1e511570d7, type: 2}
+  OnExit: {fileID: 11400000, guid: 8c3c57efd56fa4d05960259ba698af0b, type: 2}
   Brain: {fileID: 0}
   Patrol: {fileID: 0}
 --- !u!114 &114554802171879880

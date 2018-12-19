@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 2323618537187024734}
   - component: {fileID: 2150473010616297503}
   - component: {fileID: 7863917323304322991}
-  - component: {fileID: 1201583963731702377}
+  - component: {fileID: 2416697555380163371}
   m_Layer: 5
-  m_Name: SlowButton
+  m_Name: ZeroSpeedButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 3
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -121,19 +121,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: af37de2bd79ce4e6e86a150f4804a5a7, type: 2}
-        m_MethodName: ResetValue
-        m_Mode: 1
+        m_MethodName: SetValue
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 100
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 5856e4262acb24fa9bf3f184d8e230ea, type: 2}
-        m_MethodName: ResetValue
-        m_Mode: 1
+        m_MethodName: SetValue
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -142,7 +142,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 791e4e6e47ee34462b42d48e383ba00c, type: 2}
+      - m_Target: {fileID: 11400000, guid: 292fa165021774239b60e026d429c287, type: 2}
         m_MethodName: CreateOnceAndParent
         m_Mode: 1
         m_Arguments:
@@ -153,8 +153,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 791e4e6e47ee34462b42d48e383ba00c, type: 2}
+      - m_Target: {fileID: 11400000, guid: 292fa165021774239b60e026d429c287, type: 2}
         m_MethodName: Used
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 4300c45089f2b4dd09b4c7a68edffff1, type: 2}
+        m_MethodName: RaiseAction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -247,7 +258,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1201583963731702377
+--- !u!114 &2416697555380163371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -339,4 +350,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SlowTime
+  m_Text: Zero
