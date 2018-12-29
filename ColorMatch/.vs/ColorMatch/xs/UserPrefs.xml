@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{B7116D6F-3CC5-3635-6B37-9549F6A29244}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ArtisanDream.Tools/SingleVariables/FloatTypes/FloatBoolAndCount.cs">
+    <Files>
+      <File FileName="Assets/Scenes/Assets/UI Scripts/PlaySoundFX.cs" Line="13" Column="2" />
+      <File FileName="Assets/ArtisanDream.Tools/AI/Scripts/AiPatrol.cs" Line="21" Column="1" />
+      <File FileName="Assets/ArtisanDream.Tools/SingleVariables/FloatTypes/FloatBoolAndCount.cs" Line="10" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
