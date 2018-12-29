@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: InstanceTime
   m_EditorClassIdentifier: 
   value: 1.5
-  startValue: 1.5
   CanReset: 1

@@ -37247,6 +37247,7 @@ GameObject:
   - component: {fileID: 114554802171879880}
   - component: {fileID: 114124237144903810}
   - component: {fileID: 95444284067396204}
+  - component: {fileID: 8315095599588302753}
   m_Layer: 18
   m_Name: DotAgent
   m_TagString: Untagged
@@ -37478,9 +37479,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1260301265082030}
+      - m_Target: {fileID: 1204615507710774}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 114124237144903810}
+        m_MethodName: Call
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -37509,7 +37521,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2.04
+  m_Height: 0.25
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -37526,8 +37538,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnStart: {fileID: 11400000, guid: 8c3c57efd56fa4d05960259ba698af0b, type: 2}
-  OnEnter: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
-  OnExit: {fileID: 11400000, guid: 15e7e115cb6534b37a734729608bdfc3, type: 2}
+  OnEnter: {fileID: 11400000, guid: 0347b4f2da9aa46f19575b1e511570d7, type: 2}
+  OnExit: {fileID: 11400000, guid: 8c3c57efd56fa4d05960259ba698af0b, type: 2}
   Brain: {fileID: 0}
   Patrol: {fileID: 0}
 --- !u!114 &114554802171879880
@@ -37587,7 +37599,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  EndEvent:
+  BeginDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  EndDestroyEvent:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -37595,7 +37612,7 @@ MonoBehaviour:
   CanTrigger: 0
   CanDestroy: 1
   State: 0
-  Seconds: 0.1
+  Seconds: 0.25
 --- !u!95 &95444284067396204
 Animator:
   serializedVersion: 3
@@ -37615,6 +37632,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8315095599588302753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506577935296886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3551d7f1d0d50463190cfe22ab5ed73b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangeAction: {fileID: 11400000, guid: 0d8e40c53f5c84790897f9ffd539e279, type: 2}
 --- !u!1 &1582908977096360
 GameObject:
   m_ObjectHideFlags: 0

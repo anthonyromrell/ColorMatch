@@ -19,7 +19,7 @@ MonoBehaviour:
   Cash: {fileID: 11400000, guid: 83168ed2770d54ff5be22ef7766bb4bc, type: 2}
   TotalValue: 50
   HoldTime: 0.25
-  SendThis: {fileID: 11400000, guid: 0de20c99a96c74130b441fddaa430ee4, type: 2}
+  SendThisCoroutine: {fileID: 11400000, guid: 0de20c99a96c74130b441fddaa430ee4, type: 2}
   RunBuildButtonsCoroutine: {fileID: 11400000, guid: ee8597602926949f5a7ffbca2e5d530c,
     type: 2}
   EnableEvent:
@@ -38,3 +38,4 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  CurrentLayout: 0

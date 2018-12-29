@@ -35,8 +35,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - NoInputTrigger
+  - InputOnly
   m_SortingLayers:
   - name: Default
     uniqueID: 0

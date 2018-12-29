@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1341874ea2b4040d48e7de4872840b1e, type: 3}
+  m_Name: ColorGenerator
+  m_EditorClassIdentifier: 
+  GamePieces:
+  - {fileID: 11400000, guid: 73a59f9bffc4942e4b26f04349ab8c96, type: 2}
+  - {fileID: 11400000, guid: 759ac6a4685334346a21f124d069ff9d, type: 2}
+  - {fileID: 11400000, guid: facac8f4c5bb04641b47323a4cafeb1f, type: 2}
+  - {fileID: 11400000, guid: 936001b41947946609e27b9a5bb6328a, type: 2}
+  RingPrefab: {fileID: 1978265258660788, guid: c7a90e2dd53124241b41abcfb6f935f1, type: 3}
+  DotPrefab: {fileID: 1506577935296886, guid: 18b53eba914394be7b7bd0f32fa2525c, type: 3}
+  GetDotPoints: {fileID: 11400000, guid: 9bc5b1a68579e4b7aa6b1ee2a0d390ba, type: 2}
+  GetRingPoints: {fileID: 11400000, guid: 7c01f13e7bb2d40c9b6f4ed560700252, type: 2}
