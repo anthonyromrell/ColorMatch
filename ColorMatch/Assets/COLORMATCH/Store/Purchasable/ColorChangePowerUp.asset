@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70e7e693d9a6c4362af456da1c2d6bf6, type: 3}
-  m_Name: StopSpeedPowerUp
+  m_Name: ColorChangePowerUp
   m_EditorClassIdentifier: 
-  Item: {fileID: 1712752273641145944, guid: 944bc5fd8ccea4f18a35428476297300, type: 3}
+  Item: {fileID: 1712752273641145944, guid: f744b531197f84ca7940438495191361, type: 3}
   previewArt: {fileID: 0}
-  UsageCount: 181
+  UsageCount: 200
   UsagePurchase: 10
   UnlimitedUse: 0
   value: 0

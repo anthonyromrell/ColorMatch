@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: BarrierPowerUp
   m_EditorClassIdentifier: 
   Item: {fileID: 1712752273641145944, guid: 3cc1327f806ab492db39f7d643934e42, type: 3}
-  PreviewArt: {fileID: 21300000, guid: bbe1c1204b03f47f88c3963f67cf8605, type: 3}
-  UsageCount: 10
+  previewArt: {fileID: 0}
+  UsageCount: 200
   UsagePurchase: 10
   UnlimitedUse: 0
-  Value: 100
+  value: 0
   Upgrade: 0
   UpgradeFrom: {fileID: 0}
   GetInstanceLocation: {fileID: 11400000, guid: cd5d17dcfd4a34039bf3be6bce9e83f0,

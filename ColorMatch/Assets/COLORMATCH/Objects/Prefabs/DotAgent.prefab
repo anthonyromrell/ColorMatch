@@ -37537,9 +37537,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ec595f0024b440f9b6bf063af904c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnStart: {fileID: 11400000, guid: 8c3c57efd56fa4d05960259ba698af0b, type: 2}
+  OnStart: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
   OnEnter: {fileID: 11400000, guid: 0347b4f2da9aa46f19575b1e511570d7, type: 2}
-  OnExit: {fileID: 11400000, guid: 8c3c57efd56fa4d05960259ba698af0b, type: 2}
+  OnExit: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
   Brain: {fileID: 0}
   Patrol: {fileID: 0}
 --- !u!114 &114554802171879880
@@ -37609,6 +37609,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  CanSelfDestructOnStart: 0
   CanTrigger: 0
   CanDestroy: 1
   State: 0

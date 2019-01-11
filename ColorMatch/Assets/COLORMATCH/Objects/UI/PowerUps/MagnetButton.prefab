@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2150473010616297503}
   - component: {fileID: 7863917323304322991}
   m_Layer: 5
-  m_Name: BarrierButton
+  m_Name: MagnetButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
         m_MethodName: OnCall
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2674620938109283225, guid: 38483552a31c743398c0fc282bbbaeb8,
+          m_ObjectArgument: {fileID: 2458372652163502984, guid: eee2f9bdc4e5b4fdc87f06f0243dd25f,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -142,30 +142,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 8ff56f11998a74ba8a51ec8be00d66dc, type: 2}
+      - m_Target: {fileID: 11400000, guid: 27ef9390cbe624b6280f21a2317743ca, type: 2}
         m_MethodName: CreateOnceAndParent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: af37de2bd79ce4e6e86a150f4804a5a7, type: 2}
-        m_MethodName: SetValue
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: efb48271ecdaf4b5ca7c28e6ed96edda, type: 2}
-        m_MethodName: RaiseAction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -204,7 +182,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  CanSelfDestructOnStart: 0
   CanTrigger: 0
   CanDestroy: 1
   State: 0
@@ -326,4 +303,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Barrier
+  m_Text: Magnet
