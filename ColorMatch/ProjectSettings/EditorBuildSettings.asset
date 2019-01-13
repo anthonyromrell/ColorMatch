@@ -8,6 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+<<<<<<< Updated upstream
   - enabled: 1
     path: Assets/COLORMATCH/Scenes/ColorMatch.unity
     guid: 77a5f82f540a44a4b90377a1da5e24bc
@@ -17,4 +18,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/COLORMATCH/Scenes/Storefront.unity
     guid: 321cf246e205648819ee5f865a41706b
+=======
+  - enabled: 0
+    path: Assets/COLORMATCH/Scenes/GameUI.unity
+    guid: 6e2709688c834488090577d6f2b6414f
+  - enabled: 0
+    path: Assets/COLORMATCH/Scenes/ColorMatch.unity
+    guid: 77a5f82f540a44a4b90377a1da5e24bc
+  - enabled: 0
+    path: Assets/COLORMATCH/Scenes/Storefront.unity
+    guid: 321cf246e205648819ee5f865a41706b
+  - enabled: 1
+    path: Assets/Scenes/DotInvasion.unity
+    guid: b30ad2b3fd8654ce8b19d632383269f3
+>>>>>>> Stashed changes
   m_configObjects: {}
