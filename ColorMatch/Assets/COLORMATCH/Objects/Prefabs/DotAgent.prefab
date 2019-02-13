@@ -189,16 +189,16 @@ ParticleSystem:
       maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0, g: 0.48235294, b: 0.003921569, a: 1}
-        key1: {r: 0.18039216, g: 0.61960787, b: 0.32941177, a: 1}
-        key2: {r: 0, g: 1, b: 0.047058824, a: 1}
+        key0: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+        key1: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
+        key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 0, a: 0}
         key4: {r: 1, g: 0, b: 0.654902, a: 0}
         key5: {r: 0.46666667, g: 0.25882354, b: 1, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 18079
-        ctime1: 43539
+        ctime1: 43562
         ctime2: 65388
         ctime3: 38116
         ctime4: 52880
@@ -9214,7 +9214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4827600362311710
 Transform:
   m_ObjectHideFlags: 0
@@ -18809,7 +18809,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 1, b: 0, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -23173,7 +23173,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 3
   m_Range: 4
   m_SpotAngle: 30
@@ -37341,6 +37341,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   OnUp:
@@ -37537,9 +37548,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ec595f0024b440f9b6bf063af904c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnStart: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
-  OnEnter: {fileID: 11400000, guid: 0347b4f2da9aa46f19575b1e511570d7, type: 2}
-  OnExit: {fileID: 11400000, guid: b524c2b1c824345d7a84fb18b3d57197, type: 2}
+  OnStart: {fileID: 11400000, guid: 8c3c57efd56fa4d05960259ba698af0b, type: 2}
+  OnEnter: {fileID: 11400000, guid: 8c3c57efd56fa4d05960259ba698af0b, type: 2}
+  OnExit: {fileID: 11400000, guid: 8c3c57efd56fa4d05960259ba698af0b, type: 2}
+  ChangeBaseAction: {fileID: 0}
+  SendTransformAction: {fileID: 0}
   Brain: {fileID: 0}
   Patrol: {fileID: 0}
 --- !u!114 &114554802171879880
@@ -37661,7 +37674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4320562343180108
 Transform:
   m_ObjectHideFlags: 0
@@ -42538,7 +42551,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 0, g: 0.8039216, b: 1, a: 1}
-      maxColor: {r: 0.11764706, g: 1, b: 0, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -47168,7 +47181,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 0, g: 0.8039216, b: 1, a: 1}
-      maxColor: {r: 0, g: 1, b: 0.09019608, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -51789,7 +51802,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 1, b: 0, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

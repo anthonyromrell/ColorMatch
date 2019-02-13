@@ -22,7 +22,7 @@ TagManager:
   - 
   - 
   - Ring
-  - 
+  - Chaser
   - Dot
   - 
   - End
@@ -33,7 +33,7 @@ TagManager:
   - 
   - Player
   - 
-  - 
+  - Point
   - 
   - NoInputTrigger
   - InputOnly

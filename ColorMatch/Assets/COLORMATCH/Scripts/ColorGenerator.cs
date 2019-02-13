@@ -58,6 +58,7 @@ public class ColorGenerator : ScriptableObject, ICreate
 		var newGo = Instantiate(obj, location, Quaternion.identity);
 		newGo.GetComponent<MatchID>().ID = GamePieces[I].Id;
 		newGo.GetComponentInChildren<SpriteRenderer>().color = GamePieces[I].ObjColor.Value;
+		//newGo.GetComponentInChildren<ParticleSystem>().startColor = GamePieces[I].ObjColor.Value;
 	}
 }
 

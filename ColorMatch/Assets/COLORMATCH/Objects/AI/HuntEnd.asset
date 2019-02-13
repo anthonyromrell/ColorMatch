@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: {fileID: 11400000, guid: 5856e4262acb24fa9bf3f184d8e230ea, type: 2}
   AngularSpeed: {fileID: 11400000, guid: 5159358ce66f944fda4373cabd53af1e, type: 2}
-  GameAction: {fileID: 11400000, guid: f8ad6c21b897044e2a64576613863b62, type: 2}
+  DestinationAction: {fileID: 11400000, guid: f8ad6c21b897044e2a64576613863b62, type: 2}
