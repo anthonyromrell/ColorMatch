@@ -235,7 +235,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24541810}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -578,7 +578,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 185767741}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 101286be110bc47aea0ba82ddfb352f6, type: 2}
+        m_MethodName: RaiseAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &185767741
@@ -1779,7 +1790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &459569295
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1797,7 +1808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &459569296
@@ -2122,7 +2133,6 @@ GameObject:
   - component: {fileID: 555140990}
   - component: {fileID: 555140989}
   - component: {fileID: 555140992}
-  - component: {fileID: 555140991}
   m_Layer: 5
   m_Name: PopUpPanel
   m_TagString: Untagged
@@ -2187,19 +2197,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555140987}
   m_CullTransparentMesh: 0
---- !u!114 &555140991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555140987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 788ad4ddede324675b601010f2685088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 1721530254}
 --- !u!95 &555140992
 Animator:
   serializedVersion: 3
@@ -4434,7 +4431,6 @@ GameObject:
   - component: {fileID: 1039320928}
   - component: {fileID: 1039320927}
   - component: {fileID: 1039320930}
-  - component: {fileID: 1039320931}
   m_Layer: 5
   m_Name: PopUpButton1
   m_TagString: Untagged
@@ -4560,19 +4556,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1039320931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039320925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 788ad4ddede324675b601010f2685088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 1721530254}
 --- !u!1 &1048820593
 GameObject:
   m_ObjectHideFlags: 0
@@ -6010,7 +5993,6 @@ GameObject:
   - component: {fileID: 1357940201}
   - component: {fileID: 1357940200}
   - component: {fileID: 1357940203}
-  - component: {fileID: 1357940204}
   m_Layer: 5
   m_Name: PopUpButton2
   m_TagString: Untagged
@@ -6137,19 +6119,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1357940204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357940198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 788ad4ddede324675b601010f2685088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 1721530254}
 --- !u!1 &1420768192
 GameObject:
   m_ObjectHideFlags: 0
@@ -6163,7 +6132,6 @@ GameObject:
   - component: {fileID: 1420768195}
   - component: {fileID: 1420768194}
   - component: {fileID: 1420768197}
-  - component: {fileID: 1420768198}
   m_Layer: 5
   m_Name: PopUpButton3
   m_TagString: Untagged
@@ -6290,19 +6258,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1420768198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1420768192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 788ad4ddede324675b601010f2685088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 1721530254}
 --- !u!1 &1443045591
 GameObject:
   m_ObjectHideFlags: 0
@@ -8501,7 +8456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.60727036}
   m_AnchorMax: {x: 0.5, y: 0.85400003}
-  m_AnchoredPosition: {x: -0.00010109, y: 5.6499634}
+  m_AnchoredPosition: {x: -0.00010109, y: 5.649414}
   m_SizeDelta: {x: 608.8, y: 11.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783069307
@@ -8692,7 +8647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 72.099976}
+  m_AnchoredPosition: {x: 0, y: 72.09961}
   m_SizeDelta: {x: 960, y: 144.19995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1852447543
@@ -8897,7 +8852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 69.3, y: 59.30005}
+  m_AnchoredPosition: {x: 69.3, y: 59.30078}
   m_SizeDelta: {x: 721.4, y: -117.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1946002369
