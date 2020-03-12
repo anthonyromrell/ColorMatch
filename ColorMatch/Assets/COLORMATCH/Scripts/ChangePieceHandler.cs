@@ -6,18 +6,18 @@ public class ChangePieceHandler : MonoBehaviour
 
     void Start()
     {
-        ChangeAction.Raise += RaiseHandler ;
+        ChangeAction.raise += RaiseHandler ;
     }
 
     private void RaiseHandler (object obj)
     {
         var newPiece = obj as GamePiece;
-        GetComponentInChildren<SpriteRenderer>().color = newPiece.ObjColor.Value;
-        GetComponent<MatchID>().ID = newPiece.Id;
+        GetComponentInChildren<SpriteRenderer>().color = newPiece.ObjColor.value;
+        GetComponent<MatchIdBehaviour>().nameIdObj = newPiece;
     }
 
     private void OnDestroy()
     {
-        ChangeAction.Raise -= RaiseHandler ;
+        ChangeAction.raise -= RaiseHandler ;
     }
 }

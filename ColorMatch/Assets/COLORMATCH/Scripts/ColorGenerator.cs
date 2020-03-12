@@ -14,8 +14,8 @@ public class ColorGenerator : ScriptableObject, ICreate
 	public void OnEnable()
 	{
 		I = 0;
-		GetDotPoints.Raise = RaiseDotHandler;
-		GetRingPoints.Raise = RaiseRingHandler;
+		GetDotPoints.raise = RaiseDotHandler;
+		GetRingPoints.raise = RaiseRingHandler;
 	}
 
 	private void RaiseDotHandler(object dotList)
@@ -46,18 +46,18 @@ public class ColorGenerator : ScriptableObject, ICreate
 	public void Build(GameObject obj, Vector3 location)
 	{
 		var newGo = Instantiate(obj, location, Quaternion.identity);
-		newGo.GetComponent<MatchID>().ID = GamePieces[I].Id;
-		newGo.GetComponentInChildren<SpriteRenderer>().color = GamePieces[I].ObjColor.Value;
+		newGo.GetComponent<MatchIdBehaviour>().nameIdObj = GamePieces[I];
+		newGo.GetComponentInChildren<SpriteRenderer>().color = GamePieces[I].ObjColor.value;
 	}
 	
 	public void Build(GameObject obj, List<Vector3Data> points, int count)
 	{
 		var num = Mathf.RoundToInt(Random.Range(0, count));
 		if (points[num] == null) return;
-		var location = points[num].Value;
+		var location = points[num].value;
 		var newGo = Instantiate(obj, location, Quaternion.identity);
-		newGo.GetComponent<MatchID>().ID = GamePieces[I].Id;
-		newGo.GetComponentInChildren<SpriteRenderer>().color = GamePieces[I].ObjColor.Value;
+		newGo.GetComponent<MatchIdBehaviour>().nameIdObj = GamePieces[I];
+		newGo.GetComponentInChildren<SpriteRenderer>().color = GamePieces[I].ObjColor.value;
 		//newGo.GetComponentInChildren<ParticleSystem>().startColor = GamePieces[I].ObjColor.Value;
 	}
 }

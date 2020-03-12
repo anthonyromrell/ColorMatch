@@ -14,7 +14,7 @@ public class Health : ScriptableObject
 
     private void OnEnable()
     {
-        HealthAction.Raise += HealthActionHandler;
+        HealthAction.raise += HealthActionHandler;
     }
 
     private void HealthActionHandler(object obj)
@@ -26,6 +26,6 @@ public class Health : ScriptableObject
     {
         HealthBarImage.fillAmount += powerLevel;
 
-        if (HealthBarImage.fillAmount < 0) EndGameAction.RaiseNoArgs();
+        if (HealthBarImage.fillAmount < 0) EndGameAction.raiseNoArgs();
     }
 }
