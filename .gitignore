@@ -26,3 +26,5 @@ sysinfo.txt
 # Mac files
 *.DS_Store
 *.terrainlayer
+
+dotColor/Assets/_TerrainAutoUpgrade/

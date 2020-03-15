@@ -13,3 +13,12 @@
 [submodule "ColorMatch/Assets/DangFunCode"]
 	path = ColorMatch/Assets/DangFunCode
 	url = https://github.com/anthonyromrell/DangFunCode.git
+[submodule "dotColor/Assets/Tools"]
+	path = dotColor/Assets/Tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
+[submodule "dotColor/Assets/Foundation"]
+	path = dotColor/Assets/Foundation
+	url = https://github.com/anthonyromrell/UnityScriptingFoundation.git
+[submodule "dotColor/Assets/NavMeshComponents"]
+	path = dotColor/Assets/NavMeshComponents
+	url = https://github.com/anthonyromrell/NavMeshComponents.git
