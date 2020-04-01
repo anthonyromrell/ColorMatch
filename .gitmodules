@@ -1,6 +1,3 @@
-[submodule "ColorMatch/Assets/NavMeshComponents"]
-	path = ColorMatch/Assets/NavMeshComponents
-	url = https://github.com/anthonyromrell/NavMeshComponents.git
 [submodule "dotColor/Assets/Tools"]
 	path = dotColor/Assets/Tools
 	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
