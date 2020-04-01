@@ -142,7 +142,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 23816905}
-  - component: {fileID: 23816906}
   m_Layer: 0
   m_Name: RingStartPoint (0)
   m_TagString: Untagged
@@ -164,18 +163,6 @@ Transform:
   m_Father: {fileID: 1291523733}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &23816906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23816904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7531dc3af47264fb1bb3de7bd773c178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &51699627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -470,7 +457,6 @@ GameObject:
   - component: {fileID: 312569862}
   - component: {fileID: 312569866}
   - component: {fileID: 312569863}
-  - component: {fileID: 312569867}
   m_Layer: 9
   m_Name: OnEndRingTrigger
   m_TagString: Untagged
@@ -568,18 +554,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &312569867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312569861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d94b0f84a2ed4f6fb453cdcd3710821, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &341222275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011251755738, guid: 9400a7ea1a66746a0b940ca8be7b5e43,
@@ -791,6 +765,7 @@ GameObject:
   - component: {fileID: 445395208}
   - component: {fileID: 445395207}
   - component: {fileID: 445395211}
+  - component: {fileID: 445395212}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -898,6 +873,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &445395212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445395206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef489c19837d4287a526082739434b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intValue: 1
+  floatValue: 1
 --- !u!1 &477257743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,7 +1261,6 @@ GameObject:
   - component: {fileID: 771326604}
   - component: {fileID: 771326603}
   - component: {fileID: 771326602}
-  - component: {fileID: 771326605}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -1343,8 +1331,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: StartGenerator
+      - m_Target: {fileID: 445395211}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Start
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: a2ba84f10c31a41f293d16ba32507827, type: 2}
+        m_MethodName: RaiseAction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1352,18 +1351,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 771326602}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &771326603
 MonoBehaviour:
@@ -1401,18 +1389,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771326600}
   m_CullTransparentMesh: 0
---- !u!114 &771326605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771326600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2abf95213da53430a81597bed9366ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &931399905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: af83ac51f321a4f45beaaeaea3633f6e,
@@ -1815,7 +1791,6 @@ GameObject:
   - component: {fileID: 1296132935}
   - component: {fileID: 1296132936}
   - component: {fileID: 1296132937}
-  - component: {fileID: 1296132938}
   m_Layer: 14
   m_Name: OffScreen
   m_TagString: Untagged
@@ -1915,18 +1890,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1296132938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296132933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7531dc3af47264fb1bb3de7bd773c178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1476193986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,7 +1903,6 @@ GameObject:
   - component: {fileID: 1476193988}
   - component: {fileID: 1476193987}
   - component: {fileID: 1476193992}
-  - component: {fileID: 1476193991}
   m_Layer: 9
   m_Name: OnLoseGameTrigger
   m_TagString: Untagged
@@ -2021,18 +1983,6 @@ Transform:
   m_Father: {fileID: 537939962}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1476193991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1476193986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d94b0f84a2ed4f6fb453cdcd3710821, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1476193992
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2151,98 +2101,6 @@ Transform:
   m_Father: {fileID: 1797007749}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1562499473
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1562499474}
-  - component: {fileID: 1562499477}
-  - component: {fileID: 1562499476}
-  - component: {fileID: 1562499475}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1562499474
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562499473}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6274107, y: 7.4375, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1562499475
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562499473}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1562499476
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562499473}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1562499477
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562499473}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1584719292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2419,6 +2277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1656316276}
   - component: {fileID: 1656316277}
+  - component: {fileID: 1656316278}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -2462,7 +2321,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 4bc7e2e7f84f6498980beae465c14db9, type: 2}
-        m_MethodName: Generate
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2503,6 +2362,33 @@ MonoBehaviour:
   destroyEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1656316278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656316275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e640c4ecbf94a6f8075de14aa5acea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: {fileID: 11400000, guid: a2ba84f10c31a41f293d16ba32507827, type: 2}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 4bc7e2e7f84f6498980beae465c14db9, type: 2}
+        m_MethodName: InstanceToRandomStartPoint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1663222202
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,7 +3049,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2048613342}
   - component: {fileID: 2048613343}
-  - component: {fileID: 2048613344}
   m_Layer: 0
   m_Name: DestinationPoint
   m_TagString: Untagged
@@ -3234,18 +3119,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2048613344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048613341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7531dc3af47264fb1bb3de7bd773c178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2059228448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3255,7 +3128,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2059228449}
-  - component: {fileID: 2059228450}
   m_Layer: 0
   m_Name: RingStartPoint (1)
   m_TagString: Untagged
@@ -3277,18 +3149,6 @@ Transform:
   m_Father: {fileID: 1291523733}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2059228450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059228448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7531dc3af47264fb1bb3de7bd773c178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2101006040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3298,7 +3158,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101006041}
-  - component: {fileID: 2101006042}
   m_Layer: 0
   m_Name: RingStartPoint (2)
   m_TagString: Untagged
@@ -3320,18 +3179,6 @@ Transform:
   m_Father: {fileID: 1291523733}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2101006042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101006040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7531dc3af47264fb1bb3de7bd773c178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2109269481
 GameObject:
   m_ObjectHideFlags: 0
