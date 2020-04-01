@@ -1,6 +1,3 @@
-[submodule "ColorMatch/Assets/ArtisanDream.Experimental"]
-	path = ColorMatch/Assets/ArtisanDream.Experimental
-	url = https://github.com/anthonyromrell/ArtisanDream.Experimental.git
 [submodule "ColorMatch/Assets/ArtisanDream.Legacy"]
 	path = ColorMatch/Assets/ArtisanDream.Legacy
 	url = https://github.com/anthonyromrell/ArtisanDream.Legacy.git
