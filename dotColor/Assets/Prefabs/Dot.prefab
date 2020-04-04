@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9056105694070977091}
   - component: {fileID: 9056105694070977095}
   - component: {fileID: 9056105694070977116}
+  - component: {fileID: 164817403369308946}
   m_Layer: 0
   m_Name: Dot
   m_TagString: Untagged
@@ -102,7 +103,18 @@ MonoBehaviour:
       m_Calls: []
   onUp:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 164817403369308946}
+        m_MethodName: SnapToVData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9056105694070977091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979d12b1f179447dcaf0627402a0fb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 0.1
   awakeEvent:
     m_PersistentCalls:
       m_Calls:
@@ -168,19 +181,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameIdObj: {fileID: 11400000, guid: d92891703d71d4633ae5d2ba9ea71649, type: 2}
-  nameIdList:
-  - nameIdObj: {fileID: 11400000, guid: d92891703d71d4633ae5d2ba9ea71649, type: 2}
-    workEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 9056105694070977117}
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  holdTime: 0.1
+  triggerEnterMatches: []
+  triggerExitMatches: []
+--- !u!114 &164817403369308946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056105694070977117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442ebeae736344a9c89a13d39f7e4a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vector3DataObj: {fileID: 0}
+  speed: 0.1
+  holdTime: 2
