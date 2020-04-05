@@ -202,16 +202,10 @@ MonoBehaviour:
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls: []
-  triggerStayEvent:
-    m_PersistentCalls:
-      m_Calls: []
   triggerExitEvent:
     m_PersistentCalls:
       m_Calls: []
   collisionEnterEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  collisionStayEvent:
     m_PersistentCalls:
       m_Calls: []
   collisionExitEvent:
@@ -229,21 +223,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979d12b1f179447dcaf0627402a0fb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 0.1
   awakeEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: d92891703d71d4633ae5d2ba9ea71649, type: 2}
-        m_MethodName: ChangeSpriteRenderColor
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 6324995793293734935}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls: []
   quitEvent:
@@ -265,22 +252,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameIdObj: {fileID: 11400000, guid: d92891703d71d4633ae5d2ba9ea71649, type: 2}
-  nameIdList:
-  - nameIdObj: {fileID: 11400000, guid: d92891703d71d4633ae5d2ba9ea71649, type: 2}
-    workEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: d92891703d71d4633ae5d2ba9ea71649, type: 2}
-          m_MethodName: ChangeSpriteRenderColor
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 6324995793299894685}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  holdTime: 0.1
+  triggerEnterMatches: []
+  triggerExitMatches: []
 --- !u!143 &6324995793293734928
 CharacterController:
   m_ObjectHideFlags: 0
