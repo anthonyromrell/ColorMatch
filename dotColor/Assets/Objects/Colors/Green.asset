@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc2d7f8e5c7ed4466ad948b0c753b15f, type: 3}
-  m_Name: StartPointDatas
+  m_Script: {fileID: 11500000, guid: 97ce78083360c468aa3dbf7c1da3dd80, type: 3}
+  m_Name: Green
   m_EditorClassIdentifier: 
-  vector3Datas: []
+  value: {r: 0.29338968, g: 1, b: 0.09803921, a: 1}

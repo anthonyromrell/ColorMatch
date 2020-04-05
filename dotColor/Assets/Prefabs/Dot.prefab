@@ -171,7 +171,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameIdObj: {fileID: 11400000, guid: d92891703d71d4633ae5d2ba9ea71649, type: 2}
   holdTime: 0.1
-  triggerEnterMatches: []
+  triggerEnterMatches:
+  - nameIdObj: {fileID: 0}
+    workEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    delayedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   triggerExitMatches: []
 --- !u!114 &164817403369308946
 MonoBehaviour:
@@ -186,5 +193,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vector3DataObj: {fileID: 0}
-  speed: 0.1
-  holdTime: 2
+  snapSpeed: 0.1
