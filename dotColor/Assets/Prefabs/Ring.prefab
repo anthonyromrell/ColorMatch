@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6324995793293734932}
   - component: {fileID: 6324995793293734955}
   - component: {fileID: 6324995793293734928}
+  - component: {fileID: 9177442709153630938}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Untagged
@@ -273,6 +274,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9177442709153630938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6324995793293734930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0252785bd16f35a41affb8a174a19fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPatterns: {fileID: 11400000, guid: 0521a67e6a10946e88209fa6d6e32755, type: 2}
 --- !u!1 &6324995793299894687
 GameObject:
   m_ObjectHideFlags: 0
