@@ -3990,8 +3990,8 @@ MonoBehaviour:
   RepeatEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 4bc7e2e7f84f6498980beae465c14db9, type: 2}
-        m_MethodName: InstanceToRandomStartPointWithStartPointData
+      - m_Target: {fileID: 11400000, guid: 66a36dd448ec9424f8866f8ed8a2a703, type: 2}
+        m_MethodName: RandomizeIndex
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4003,6 +4003,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: fa4825501756543bcac0bdd6d8fa63dd, type: 2}
         m_MethodName: InstanceToRandomStartPoint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 4bc7e2e7f84f6498980beae465c14db9, type: 2}
+        m_MethodName: InstanceToRandomStartPointWithStartPointData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
