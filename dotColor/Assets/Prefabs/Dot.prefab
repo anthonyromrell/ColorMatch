@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 9056105694070977090}
   - component: {fileID: 9056105694070977091}
   - component: {fileID: 9056105694070977095}
-  - component: {fileID: 9056105694070977116}
   - component: {fileID: 164817403369308946}
+  - component: {fileID: 8203662475744236156}
   m_Layer: 8
   m_Name: Dot
   m_TagString: Untagged
@@ -157,29 +157,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9056105694070977116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9056105694070977117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b487b135cefe43b47af4acc3a616c8bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameIdObj: {fileID: 11400000, guid: d92891703d71d4633ae5d2ba9ea71649, type: 2}
-  holdTime: 0.1
-  triggerEnterMatches:
-  - nameIdObj: {fileID: 0}
-    workEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    delayedEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  triggerExitMatches: []
 --- !u!114 &164817403369308946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,3 +171,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vector3DataObj: {fileID: 0}
   snapSpeed: 0.1
+  sendBackVector3: {fileID: 11400000, guid: 1c9e8991898354855b058099e1bf62ec, type: 2}
+  Vector3DataSystem: {fileID: 11400000, guid: 6a8e269bcfb3c446eae05667dbada2e4, type: 2}
+--- !u!114 &8203662475744236156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056105694070977117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42edad24293c46b0a2f8956394598a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameIdObj: {fileID: 0}
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 55c2a3aa8f6ae49cca067079410b08b9, type: 2}
+        m_MethodName: DestroyObj
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9056105694070977117}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []

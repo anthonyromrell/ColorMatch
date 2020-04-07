@@ -94,10 +94,10 @@ GameObject:
   - component: {fileID: 6324995793293734929}
   - component: {fileID: 6324995793293734933}
   - component: {fileID: 6324995793293734932}
-  - component: {fileID: 6324995793293734955}
   - component: {fileID: 6324995793293734928}
   - component: {fileID: 9177442709153630938}
-  m_Layer: 0
+  - component: {fileID: 1759791489972778027}
+  m_Layer: 12
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,22 +240,6 @@ MonoBehaviour:
   destroyEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6324995793293734955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6324995793293734930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b487b135cefe43b47af4acc3a616c8bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameIdObj: {fileID: 11400000, guid: d92891703d71d4633ae5d2ba9ea71649, type: 2}
-  holdTime: 0.1
-  triggerEnterMatches: []
-  triggerExitMatches: []
 --- !u!143 &6324995793293734928
 CharacterController:
   m_ObjectHideFlags: 0
@@ -287,6 +271,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPatterns: {fileID: 11400000, guid: 0521a67e6a10946e88209fa6d6e32755, type: 2}
+--- !u!114 &1759791489972778027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6324995793293734930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba972d9d565f4b1da7c5a8b15d6c91f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameIdObj: {fileID: 0}
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1759791489972778027}
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1759791489972778027}
+        m_MethodName: ChangeID
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e12634eb4e59541a08aaacf93c13f347,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: NameId, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6324995793299894687
 GameObject:
   m_ObjectHideFlags: 0
