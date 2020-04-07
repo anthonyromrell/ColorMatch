@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1172377583134764646}
   - component: {fileID: 8946787395545460210}
   - component: {fileID: 1884844271223886354}
-  - component: {fileID: 4339428260074173212}
   m_Layer: 16
   m_Name: Box
   m_TagString: Untagged
@@ -112,31 +111,3 @@ MonoBehaviour:
   holdTime: 0.1
   triggerEnterMatches: []
   triggerExitMatches: []
---- !u!114 &4339428260074173212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5318119182490017746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 979d12b1f179447dcaf0627402a0fb09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holdTime: 0.1
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  onEnableEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  quitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  destroyEvent:
-    m_PersistentCalls:
-      m_Calls: []
