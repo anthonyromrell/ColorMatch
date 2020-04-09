@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 7291916791856440654}
   - component: {fileID: 1865472763783256055}
   - component: {fileID: 4183147233451942244}
-  - component: {fileID: 4159072869526597957}
-  m_Layer: 5
+  m_Layer: 16
   m_Name: BoxPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,13 +74,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4159072869526597957
+--- !u!114 &6457781328369079860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5145371848071838696}
+  m_GameObject: {fileID: 8045858205748408638}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d42edad24293c46b0a2f8956394598a4, type: 3}
@@ -90,10 +89,32 @@ MonoBehaviour:
   nameIdObj: {fileID: 0}
   matchEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 90eb7b6f144b34483a84fdb9e2d9ad43, type: 2}
+        m_MethodName: OnDebug
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: win
+          m_BoolArgument: 0
+        m_CallState: 2
   noMatchEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 90eb7b6f144b34483a84fdb9e2d9ad43, type: 2}
+        m_MethodName: OnDebug
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lose
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &2766723445005332204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -161,8 +182,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1884844271223886354, guid: d33612d081b3a4b83ac6ea89b40d47bf,
+        type: 3}
+      propertyPath: triggerEnterMatches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1884844271223886354, guid: d33612d081b3a4b83ac6ea89b40d47bf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d33612d081b3a4b83ac6ea89b40d47bf, type: 3}
+--- !u!1 &8045858205748408638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5318119182490017746, guid: d33612d081b3a4b83ac6ea89b40d47bf,
+    type: 3}
+  m_PrefabInstance: {fileID: 2766723445005332204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8743475801807090194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6859669127538597118, guid: d33612d081b3a4b83ac6ea89b40d47bf,
