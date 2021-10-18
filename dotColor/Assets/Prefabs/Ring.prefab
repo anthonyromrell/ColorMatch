@@ -51,6 +51,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -153,6 +155,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1759791489972778027}
+        m_TargetAssemblyTypeName: 
         m_MethodName: ChangeColor
         m_Mode: 1
         m_Arguments:
@@ -164,6 +167,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 4997683124479773354}
+        m_TargetAssemblyTypeName: 
         m_MethodName: ChangeLayer
         m_Mode: 3
         m_Arguments:
@@ -178,6 +182,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: b5f6de78abc914230897dcb6b86e1df5, type: 2}
+        m_TargetAssemblyTypeName: 
         m_MethodName: RaiseAction
         m_Mode: 1
         m_Arguments:
@@ -210,7 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6324995793299894686}
   - component: {fileID: 6324995793299894685}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: colorDot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,6 +250,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
