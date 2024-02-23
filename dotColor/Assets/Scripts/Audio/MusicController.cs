@@ -30,14 +30,14 @@ namespace Audio
         public AudioMixerSnapshot outActionColor;
 
         private void Awake()
-        {
-           // StartButton.StartButtonAction += PlayButtonSound;
+        { 
+            // StartButton.StartButtonAction += PlayButtonSound;
             //RingAndWaveControl.RestartWave += ColorActionStart;
-            GameOver.raiseNoArgs += ColorActionStop;
-            GameOver.raiseNoArgs += PlayOpenRingSound;
+            GameOver.RaiseNoArgs += ColorActionStop;
+            GameOver.RaiseNoArgs += PlayOpenRingSound;
             //RingAsset.RingOnWin += PlayCatchSound;
-            Match.raiseNoArgs += PlayMatchSound;
-            NoMatch.raiseNoArgs += PlayNotMatchSound;
+            Match.RaiseNoArgs += PlayMatchSound;
+            NoMatch.RaiseNoArgs += PlayNotMatchSound;
         }
 
         public void ColorActionStart()

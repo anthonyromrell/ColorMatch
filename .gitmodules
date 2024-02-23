@@ -1,9 +1,9 @@
 [submodule "dotColor/Assets/Tools"]
 	path = dotColor/Assets/Tools
 	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
-[submodule "dotColor/Assets/Foundation"]
-	path = dotColor/Assets/Foundation
-	url = https://github.com/anthonyromrell/UnityScriptingFoundation.git
 [submodule "dotColor/Assets/NavMeshComponents"]
 	path = dotColor/Assets/NavMeshComponents
 	url = https://github.com/anthonyromrell/NavMeshComponents.git
+[submodule "dotColor/Assets/Models"]
+	path = dotColor/Assets/Models
+	url = https://github.com/anthonyromrell/3DEssentialsResources.git
