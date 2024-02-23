@@ -4,6 +4,3 @@
 [submodule "dotColor/Assets/NavMeshComponents"]
 	path = dotColor/Assets/NavMeshComponents
 	url = https://github.com/anthonyromrell/NavMeshComponents.git
-[submodule "dotColor/Assets/Models"]
-	path = dotColor/Assets/Models
-	url = https://github.com/anthonyromrell/3DEssentialsResources.git
