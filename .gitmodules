@@ -1,6 +1,3 @@
 [submodule "dotColor/Assets/Tools"]
 	path = dotColor/Assets/Tools
 	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
-[submodule "dotColor/Assets/NavMeshComponents"]
-	path = dotColor/Assets/NavMeshComponents
-	url = https://github.com/anthonyromrell/NavMeshComponents.git
